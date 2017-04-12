@@ -28,7 +28,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo site_url(); ?>admin/pages" class="logo">
+    <a href="<?php echo site_url(); ?>home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -48,9 +48,9 @@
         <ul class="nav navbar-nav">
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url(); ?>backend/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $current_user->first_name.''.$current_user->last_name; ?></span>
+              <span class="hidden-xs">Satya Kresna</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -58,14 +58,14 @@
                 <img src="<?php echo base_url(); ?>backend/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  <?php echo $current_user->first_name.''.$current_user->last_name; ?> - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  <?php echo "Satya Kresna"; ?> - Web Developer
+                  <small>Since 2014</small>
                 </p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?php echo site_url(); ?>admin/user" class="btn btn-default btn-flat">Profile</a>
+                  <a href="<?php echo site_url(); ?>home/user" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
                   <a href="<?php echo site_url(); ?>logout" class="btn btn-default btn-flat">Sign out</a>
@@ -90,26 +90,12 @@
           <img src="<?php echo base_url(); ?>backend/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p><?php echo $current_user->first_name.''.$current_user->last_name; ?></p>
-          <a href="<?php echo site_url(); ?>admin/user"><i class="fa fa-circle text-success" aria-hidden="true"></i> Online</a>
+          <p><a href="<?php echo site_url(); ?>home/user"><?php echo "Satya Kresna"; ?></a></p>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="header">SETTING</li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-users" aria-hidden="true"></i> <span>User Management</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo site_url(); ?>admin/users"><i class="fa fa-circle-o" aria-hidden="true"></i> <span>List Users</span></a></li>
-            <li><a href="<?php echo site_url(); ?>admin/groups"><i class="fa fa-circle-o" aria-hidden="true"></i> <span>List Group</span></a></li>
-          </ul>
-        </li>
-        <li class="header">SAMPLE</li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
@@ -118,11 +104,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url(); ?>admin/pages"><i class="fa fa-circle-o" aria-hidden="true"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo site_url(); ?>home"><i class="fa fa-circle-o" aria-hidden="true"></i> Dashboard v1</a></li>
           </ul>
         </li>
-        <li><a href="<?php echo site_url(); ?>admin/pages/datatable"><i class="fa fa-database" aria-hidden="true"></i> <span>Datatable</span></a></li>
-        <li class="active"><a href="<?php echo site_url(); ?>admin/pages/blank"><i class="fa fa-file-o" aria-hidden="true"></i> <span>Blank Page</span></a></li>
+        <li><a href="<?php echo site_url(); ?>home/datatable"><i class="fa fa-database" aria-hidden="true"></i> <span>Datatable</span></a></li>
+        <li class="active"><a href="<?php echo site_url(); ?>home/blank"><i class="fa fa-file-o" aria-hidden="true"></i> <span>Blank Page</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

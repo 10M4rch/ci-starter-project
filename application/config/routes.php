@@ -49,23 +49,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'auth/login';
+$route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-
-$route['login'] = 'auth/login';
-$route['logout'] = 'auth/logout';
-$route['forgot-password'] = 'auth/forgot_password';
-$route['register'] = 'auth/register';
-
-$route['admin/users'] = 'admin/user_management';
-$route['admin/users/create'] = 'admin/user_management/create_user';
-$route['admin/users/edit/(:num)'] = 'admin/user_management/edit_user/$1';
-$route['admin/users/delete/(:num)'] = 'admin/user_management/delete_user/$1';
-$route['admin/users/deactivate/(:num)'] = 'admin/user_management/deactivate/$1';
-$route['admin/users/activate/(:num)'] = 'admin/user_management/activate/$1';
-
-$route['admin/groups'] = 'admin/user_management/groups';
-$route['admin/groups/create'] = 'admin/user_management/create_group';
-$route['admin/groups/edit/(:num)'] = 'admin/user_management/edit_group/$1';
-$route['admin/groups/delete/(:num)'] = 'admin/user_management/delete_group/$1';
